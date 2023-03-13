@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".box").dblclick(function () {
+                if ($(this).css("background-color") == "rgb(255, 255, 0)") {
+                    $(this).css("background-color", "red")
+                } else {
+                    $(this).css("background-color", "yellow")
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+        .container {
+            display: flex;
+        }
+
+        .box {
+            width: 80;
+            height: 80;
+            background-color: yellow;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Klik 2x pada setiap kotak untuk mengubah warnanya</p>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Konversi Bilangan</title>
+</head>
+
+    <script languange="JavaScript">
+        function konversi()  {
+            /*Memberikan window promt untuk menginput nilai*/
+            inputNilai = window.prompt("Masukkan Nilai :")
+            /*If Else untuk nilai yang di input lalu dikonversikan ke huruf*/
+            if (inputNilai <= 40){
+                document.write("E")                
+            } else if (inputNilai >= 41 && inputNilai <= 55){
+                document.write("D")                
+            } else if (inputNilai >= 56 && inputNilai <= 60){
+                document.write("C")                
+            } else if (inputNilai >= 61 && inputNilai <= 65){
+                document.write("BC")                
+            } else if (inputNilai >= 66 && inputNilai <= 70){
+                document.write("B")                
+            } else if (inputNilai >= 71 && inputNilai <= 80){
+                document.write("AB")                
+            } else if (inputNilai >= 81 && inputNilai <= 100){
+                document.write("A")                
+            } else {
+                document.write("Nilai Tidak Ada")
+            }            
+        }
+    </script>
+
+<body onload="konversi()">
+    
+</body>
+</html>

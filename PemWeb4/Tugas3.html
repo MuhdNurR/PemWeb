@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // fade out
+            $(".button1").click(function () {
+                $(".box").fadeOut(300)
+            });
+
+            // fade in
+            $(".button2").click(function () {
+                $(".box").fadeIn(300)
+            });
+
+            // fade to
+            $(".button3").click(function () {
+                if ($(".box").css("opacity") == "0.3") {
+                    $(".box").fadeTo(300, 1);
+                } else {
+                    $(".box").fadeTo(300, 0.3);
+                }
+
+            });
+        });
+    </script>
+    <style>
+        .box {
+            margin-bottom: 5px;
+            width: 6cm;
+            height: 3cm;
+            border: 2px solid;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+    <button class="button1">Fade Out</button>
+    <button class="button2">Fade In</button>
+    <button class="button3">Fade To 0.3s</button>
+</body>
+
+</html>
