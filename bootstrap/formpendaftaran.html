@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initialscale=1">
+    <link rel="icon" href="favicon.ico">
+    <title>Form Registrasi Event</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-secondary text-white">
+    <!-- main content - start -->
+    <div class="container">
+        <div class="card bg-dark text-white mt-4">
+            <div class="card-header text-center font-weight-bold">
+                EVENT REGISTRATION FORM
+            </div>
+            <div class="card-body bg-light text-dark">
+                <form method="POST" class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-2">
+                            <label class="font-weight-bold">
+                                Name
+                            </label>
+                        </div>
+                        <div class="col-md-5 mb-2">
+                            <input type="text" class="form-control" id="first_name" placeholder="Enter first name"
+                                name="first_name" required>
+                            <div class="valid-feedback">
+                                Valid.
+                            </div>
+                            <div class="invalid-feedback">
+                                First name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="password" class="form-control" id="last_name" placeholder="Enter last name"
+                                name="last_name" required>
+                            <div class="valid-feedback">
+                                Valid.
+                            </div>
+                            <div class="invalid-feedback">
+                                Last name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mt-4">
+                        <div class="col-md-2">
+                            <label class="font-weight-bold">
+                                Company
+                            </label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="company" placeholder="Enter company"
+                                name="company">
+                        </div>
+                    </div>
+                    <div class="form-row mt-4">
+                        <div class="col-md-2">
+                            <label class="font-weight-bold">
+                                Email
+                            </label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email"
+                                required>
+                            <div class="valid-feedback">
+                                Valid.
+                            </div>
+                            <div class="invalid-feedback">
+                                Email is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mt-4">
+                        <div class="col-md-2">
+                            <label class="font-weight-bold">
+                                Phone
+                            </label>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <input type="text" class="form-control" id="phone_code" placeholder="Enter area code"
+                                name="phone_code">
+                        </div>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="phone_number"
+                                placeholder="Enter phone number" name="phone_number">
+                        </div>
+                    </div>
+                    <div class="form-row mt-4">
+                        <div class="col-md-2">
+                            <label class="font-weight-bold">
+                                Subject
+                            </label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Choose Option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group mt-4">
+                        <label class="font-weight-bold">
+                            Are you an existing customer?
+                        </label>
+                        <br>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">Yes
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">No
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger">
+                        REGISTER
+                    </button>
+                </form>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+    <!-- main content - end -->
+    <!--
+        Bootstrap core JavaScript
+        Placed at the end of the document so the pages load faster
+    -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms =
+                    document.getElementsByClassName('needs-validation');
+                var validation =
+                    Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>
