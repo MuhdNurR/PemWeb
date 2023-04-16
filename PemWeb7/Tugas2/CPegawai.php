@@ -13,7 +13,7 @@
     }
 
     $sql = "INSERT INTO pegawai (id, nama, jabatan, gaji, alamat, id_departemen)
-    VALUES ('1','Audi','Asisten Dosen', '1000000', 'Jalan Penjaringan Asri IX' , '1')";
+    VALUES ('1','Muhammad Nur Rachman N. S','Asisten Dosen', '1000000', 'Jalan Penjaringan Asri IX' , '1')";
 
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";

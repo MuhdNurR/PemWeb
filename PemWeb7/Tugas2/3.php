@@ -10,8 +10,6 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check Connection
 if (!$conn) {
     die("Connection failed : " . mysqli_connect_error());
-} else {
-    echo "Connection Success<br>";
 }
 
 // Create Database
@@ -26,7 +24,7 @@ $sql = "CREATE TABLE pegawai (
 );";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Table created successfully";
+    echo "Table Pegawai created successfully";
 } else {
     echo "Error creating table: " . mysqli_error($conn);
 }

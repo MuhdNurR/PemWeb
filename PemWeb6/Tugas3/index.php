@@ -9,6 +9,7 @@
     <h1>BIODATA DIRI</h1>
     <form method="post" action="proses.php">
         <table>
+            <input type="image" src="" alt="">
             <tr>
                 <td>Nama</td>
                 <td>:</td>
