@@ -12,6 +12,11 @@
         .warning {
             color: #FF0000;
         }
+
+        .row {
+            place-content: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -81,7 +86,8 @@
         return $data;
     }
     ?>
-    <div class="row">
+
+    <div class="row ">
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
@@ -93,7 +99,9 @@
                         <div class="form-group row">
                             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
                             <div class="col-sm-10">
-                                <input type="text" name="nama" class="form-control <?php echo ($error_nama != "" ? "is-invalid" : ""); ?>" id="nama" placeholder="Nama" value="<?php echo $nama; ?>"><span class="warning"><?php echo $error_nama; ?></span>
+                                <input type="text" name="nama" class="form-control 
+                                <?php echo ($error_nama != "" ? "is-invalid" : ""); ?>" id="nama" placeholder="Nama" value="<?php echo $nama; ?>">
+                                <span class="warning"><?php echo $error_nama; ?></span>
                             </div>
                         </div>
 
@@ -101,28 +109,36 @@
                         <div class="form-group row">
                             <label for="email" class="col-sm-2 col-form-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="text" name="email" class="form-control <?php echo ($error_email != "" ? "is-invalid" : ""); ?>" id="email" placeholder="Email" value="<?php echo $email; ?>"><span class="warning"><?php echo $error_email; ?></span>
+                                <input type="text" name="email" class="form-control 
+                                <?php echo ($error_email != "" ? "is-invalid" : ""); ?>" id="email" placeholder="Email" value="<?php echo $email; ?>">
+                                <span class="warning"><?php echo $error_email; ?></span>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="web" class="col-sm-2 col-form-label">Website</label>
                             <div class="col-sm-10">
-                                <input type="text" name="web" class="form-control <?php echo ($error_web != "" ? "is-invalid" : ""); ?>" id="web" placeholder="Website" value="<?php echo $web; ?>"><span class="warning"><?php echo $error_web; ?></span>
+                                <input type="text" name="web" class="form-control
+                                <?php echo ($error_web != "" ? "is-invalid" : ""); ?>" id="web" placeholder="Website" value="<?php echo $web; ?>">
+                                <span class="warning"><?php echo $error_web; ?></span>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="telp" class="col-sm-2 col-form-label">Telp</label>
                             <div class="col-sm-10">
-                                <input type="text" name="telp" class="form-control <?php echo ($error_telp != "" ? "is-invalid" : ""); ?>" id="telp" placeholder="Telp" value="<?php echo $telp; ?>"><span class="warning"><?php echo $error_telp; ?></span>
+                                <input type="text" name="telp" class="form-control 
+                                <?php echo ($error_telp != "" ? "is-invalid" : ""); ?>" id="telp" placeholder="Telp" value="<?php echo $telp; ?>">
+                                <span class="warning"><?php echo $error_telp; ?></span>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="pesan" class="col-sm-2 col-form-label">Pesan</label>
                             <div class="col-sm-10">
-                                <textarea name="pesan" class="form-control <?php echo ($error_pesan != "" ? "is-invalid" : ""); ?>"><?php echo $pesan; ?></textarea><span class="warning"><?php echo $error_pesan; ?></span>
+                                <textarea name="pesan" class="form-control 
+                                <?php echo ($error_pesan != "" ? "is-invalid" : ""); ?>"><?php echo $pesan; ?></textarea><span class="warning">
+                                    <?php echo $error_pesan; ?></span>
                             </div>
                         </div>
 
@@ -132,7 +148,6 @@
                             </div>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -151,6 +166,7 @@
     echo "<br>";
     echo "Pesan = " . $pesan;
     ?>
+
 </body>
 
 </html>
