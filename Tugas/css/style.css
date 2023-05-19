@@ -1,0 +1,13 @@
+/* Halaman Login */
+.gambarbackgroundlogin {
+    background: url(../images/BG1.jpg) center fixed;
+}
+
+
+/* Halaman Form */
+.judulbghitam {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    padding-left: 5px;
+}
