@@ -14,7 +14,6 @@ $sheet->setCellValue('D1', 'Pendidkan');
 $sheet->setCellValue('E1', 'Pekerjaan');
 $sheet->setCellValue('F1', 'Penghasilan');
 $sheet->setCellValue('G1', 'Berkebutuhan Khusus');
-
 $sheet->setCellValue('H1', 'Nama Ibu');
 $sheet->setCellValue('I1', 'Tahun Lahir');
 $sheet->setCellValue('J1', 'Pendidkan');
@@ -29,21 +28,18 @@ $no = 1;
 
 while ($row = mysqli_fetch_array($query)) {
     $sheet->setCellValue('A' . $i, $no++);
-
     $sheet->setCellValue('B' . $i, $row['nama_ayah']);
     $sheet->setCellValue('C' . $i, $row['tahun_lahir_ayah']);
     $sheet->setCellValue('D' . $i, $row['pendidikan_ayah']);
     $sheet->setCellValue('E' . $i, $row['pekerjaan_ayah']);
     $sheet->setCellValue('F' . $i, $row['penghasilan_ayah']);
     $sheet->setCellValue('G' . $i, $row['berkebutuhan_khusus_ayah']);
-
     $sheet->setCellValue('H' . $i, $row['nama_ibu']);
     $sheet->setCellValue('I' . $i, $row['tahun_lahir_ibu']);
     $sheet->setCellValue('J' . $i, $row['pendidikan_ibu']);
     $sheet->setCellValue('K' . $i, $row['pekerjaan_ibu']);
     $sheet->setCellValue('L' . $i, $row['penghasilan_ibu']);
     $sheet->setCellValue('M' . $i, $row['berkebutuhan_khusus_ibu']);
-
     $i++;
 }
 

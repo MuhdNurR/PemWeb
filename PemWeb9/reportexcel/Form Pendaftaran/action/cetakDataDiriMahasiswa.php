@@ -43,10 +43,8 @@ while ($row = mysqli_fetch_array($query)) {
     $sheet->setCellValue('C' . $i, $row['jenis_kelamin']);
     $nisn = str_replace(',', '', $row['nisn']);
     $sheet->setCellValue('D' . $i, $nisn);
-
     $nik = str_replace(',', '', $row['nik']);
     $sheet->setCellValue('E' . $i, $nik);
-
     $sheet->setCellValue('F' . $i, $row['tempat_lahir']);
     $sheet->setCellValue('G' . $i, $row['tanggal_lahir']);
     $sheet->setCellValue('H' . $i, $row['agama']);
@@ -60,10 +58,8 @@ while ($row = mysqli_fetch_array($query)) {
     $sheet->setCellValue('P' . $i, $row['kode_pos']);
     $sheet->setCellValue('Q' . $i, $row['tempat_tinggal']);
     $sheet->setCellValue('R' . $i, $row['moda_transportasi']);
-
     $nomor_hp = str_replace(',', '', $row['nomor_hp']);
     $sheet->setCellValue('S' . $i, $nomor_hp);
-
     $sheet->setCellValue('T' . $i, $row['nomor_telp']);
     $sheet->setCellValue('U' . $i, $row['email_pribadi']);
     $sheet->setCellValue('V' . $i, $row['penerima_kps_pkh_kip']);
@@ -85,6 +81,7 @@ $i = $i - 1;
 $sheet->getStyle('A1:L' . $i)->applyFromArray($styleArray);
 
 $write = new Xlsx($spreadsheet);
+
 $write->save('../data/Report Data Diri Mahasiswa.xlsx');
 
 header('location: ../dashboardadmin.php');
