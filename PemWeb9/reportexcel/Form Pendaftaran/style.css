@@ -179,6 +179,7 @@ a {
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px)
     }
+<<<<<<< HEAD
 }
 
 
@@ -206,4 +207,6 @@ a {
 
 #nav-contact {
     width: 100% !important;
+=======
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
 }

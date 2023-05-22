@@ -21,7 +21,11 @@ while ($row = mysqli_fetch_array($query)) {
     $sheet->setCellValue('A' . $i, $no++);
     $sheet->setCellValue('B' . $i, $row['nama']);
     $sheet->setCellValue('C' . $i, $row['kelas']);
+<<<<<<< HEAD
     $sheet->setCellValue('D' . $i, $row['alamat']); 
+=======
+    $sheet->setCellValue('D' . $i, $row['alamat']);
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
     $i++;
 }
 
