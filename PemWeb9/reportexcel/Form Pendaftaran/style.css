@@ -179,6 +179,10 @@ a {
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px)
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
 }
 
 
@@ -203,4 +207,9 @@ a {
 
 #nav-contact {
     width: 100% !important;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
 }

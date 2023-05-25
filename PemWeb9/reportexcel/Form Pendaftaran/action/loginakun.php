@@ -19,8 +19,16 @@ if ($cek > 0) {
         $_SESSION['username'] = $username;
         $_SESSION['level'] = "admin";
         $_SESSION['login'] = true;
+<<<<<<< HEAD
         header("location: ../dashboardadmin.php");
 
+=======
+<<<<<<< HEAD
+        header("location: ../admin/dashboardadmin.php");
+=======
+        header("location: ../dashboardadmin.php");
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
         exit;
     } else if ($data['level'] == "siswa") {
         if ($data['daftar'] == "0") {

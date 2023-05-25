@@ -23,6 +23,14 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+=======
+
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
@@ -31,7 +39,11 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
 
 <head>
     <title>Example</title>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
 </head>
 
 <body id="body-pd">
@@ -42,11 +54,23 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
+<<<<<<< HEAD
                 <a href="dashboardadmin.php" class="nav_logo">
+=======
+<<<<<<< HEAD
+                <a href="dashboardadmin.php" class="nav_logo">
+=======
+                <a href="#" class="nav_logo">
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
                     <i class='bx bx-layer nav_logo-icon'></i>
                     <span class="nav_logo-name">Rumah</span>
                 </a>
                 <div class="nav_list">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
                     <a href="dashboardadmin.php" class="nav_link active">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
@@ -58,6 +82,18 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
                     <a href="dashboardadminortu.php" class="nav_link">
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Orang Tua</span>
+<<<<<<< HEAD
+=======
+=======
+                    <a href="#" class="nav_link active">
+                        <i class='bx bx-grid-alt nav_icon'></i>
+                        <span class="nav_name">Dashboard</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class='bx bx-user nav_icon'></i>
+                        <span class="nav_name">Users</span>
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
                     </a>
                 </div>
             </div>
@@ -69,7 +105,15 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
     </div> <!--Container Main start-->
 
 
+<<<<<<< HEAD
     <div class="height-100">
+=======
+<<<<<<< HEAD
+    <div class="height-100">
+=======
+    <div class="height-100"> */
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
         <div class="container" style="margin-top: 80px">
             <div class="row">
                 <div class="col-md-12">
@@ -91,7 +135,15 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
                                             <th scope="col">TANGGAL LAHIR</th>
                                             <th scope="col">AGAMA</th>
                                             <th scope="col">BERKEBUTUHAN KHUSUS</th>
+<<<<<<< HEAD
                                             <th scope="col">ALAMAT</th>
+=======
+<<<<<<< HEAD
+                                            <th scope="col">ALAMAT</th>
+=======
+                                            <th scope="col">ALAMT</th>
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
                                             <th scope="col">RT</th>
                                             <th scope="col">RW</th>
                                             <th scope="col">DUSUN</th>
@@ -106,7 +158,14 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
                                             <th scope="col">KPS/PKH/KIP</th>
                                             <th scope="col">NO KPS/PKH/KIP</th>
                                             <th scope="col">KEWARGANEGARAAN</th>
+<<<<<<< HEAD
                                             <th scope="col">Edit</th>
+=======
+<<<<<<< HEAD
+=======
+                                            <th scope="col">Edit</th>
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -140,9 +199,18 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
                                                 <td><?php echo $row['penerima_kps_pkh_kip'] ?> </td>
                                                 <td><?php echo $row['no_kps_pkh_kip'] ?> </td>
                                                 <td><?php echo $row['kewarganegaraan'] ?> </td>
+<<<<<<< HEAD
                                                 <td class="text-center">
                                                     <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Edit</a>
                                                 </td>
+=======
+<<<<<<< HEAD
+=======
+                                                <td class="text-center">
+                                                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Edit</a>
+                                                </td>
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
                                             </tr>
                                         <?php } ?>
                                     </tbody>
@@ -154,6 +222,62 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="script.js"></script>
+=======
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel">CRUD TOOLS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Hapus</button>
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Edit</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active text-black-50" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio nulla debitis eligendi autem amet doloremque, eaque magni quod necessitatibus dolorum ratione deleniti aliquam eveniet illo nemo, ipsam sit ad obcaecati rerum esse corrupti beatae placeat! Cumque, perspiciatis iste, reprehenderit corporis architecto repudiandae provident autem, cupiditate id voluptates quasi illum? Dicta vitae alias, et fugiat accusantium minus a! Maiores eius molestias quae harum, maxime obcaecati soluta, inventore fugiat perferendis deserunt odio cum facilis. Officiis voluptates, totam magni iure facere fugit perferendis quia, odit quisquam a veritatis eos, assumenda tenetur corporis aspernatur in sit deserunt illo numquam dolorem voluptatum necessitatibus accusamus ducimus quam! Aperiam, numquam provident? Esse aliquam eum voluptatum soluta culpa ullam aut ut, amet vel iusto itaque omnis dignissimos voluptate velit eius sequi et libero tempore, nisi animi est recusandae harum possimus. Aut neque quas totam explicabo a, porro officiis, beatae, expedita ad vero reiciendis possimus sed quam aspernatur accusantium illum maxime quae nisi corporis dolor unde debitis placeat facere architecto. Tempora libero totam iste quo debitis qui possimus itaque accusantium voluptates? Corporis perspiciatis impedit quae omnis maxime delectus possimus temporibus natus dolores minima voluptate voluptatem quam debitis consectetur, nobis rem corrupti? Ab esse, labore maiores praesentium delectus ipsa.</div>
+                                <div class="tab-pane fade text-black-50" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eum quod eligendi aperiam in molestiae suscipit, expedita voluptate voluptatum, error veritatis, quidem odit tempora? Provident nam facere sequi earum sunt nemo blanditiis aliquam voluptas consectetur. Beatae, quae omnis est dolorum aspernatur exercitationem excepturi reprehenderit! Eveniet amet suscipit in odio dolor dignissimos quasi a eaque, nam hic vitae quae fuga nobis totam explicabo ipsum veritatis voluptatem. Omnis fugiat voluptatem quam porro nulla similique voluptas velit excepturi consequuntur sed animi, dolorum exercitationem quasi. Modi ipsam porro voluptate, dicta laudantium sed aliquid quisquam mollitia fugiat minima! Tenetur modi mollitia molestiae provident vel possimus officia omnis aperiam sequi tempora dolores, at maxime commodi vero, odit perspiciatis nihil? Voluptatum vitae architecto, cupiditate est ab explicabo porro necessitatibus similique animi ad perferendis tenetur natus ipsa aut culpa blanditiis tempora fugiat enim odio iusto suscipit libero dolorum! Saepe nesciunt, possimus, ipsum tenetur tempore error fugiat ducimus deleniti odit asperiores vero beatae minima pariatur natus praesentium sunt ut deserunt dolore et impedit voluptatem quia! Et suscipit illum quae maxime maiores totam consequatur necessitatibus neque omnis tenetur commodi repellat non molestiae quisquam porro reiciendis, assumenda esse consectetur pariatur quas repellendus harum doloribus nam! Dolorum minus velit architecto atque numquam?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
     </div>
 </body>
 <script>
@@ -199,10 +323,14 @@ $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
         // Your code to run since DOM is loaded and ready
     });
 </script>
+<<<<<<< HEAD
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script src="script.js"></script>
+=======
+>>>>>>> 741f576b42a667936134a8650f7ee2022983afae
+>>>>>>> ac3f50b1dd8f4fd519a977396990d8809938574d
 
 </html>
